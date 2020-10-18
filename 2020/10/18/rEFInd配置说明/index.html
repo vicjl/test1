@@ -21,17 +21,19 @@
     var CONFIG = {"hostname":"example.com","root":"/test/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="相关网页及项目由VicQ创建并维护">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dell7567-OC">
-<meta property="og:url" content="http://example.com/archives/2020/10/index.html">
+  <meta name="description" content="rEFInd配置说明（节选自远景论坛）提取了几个常用参数对refind.conf文件做一下说明：其中的参数稍微有点多，但是我们不必深究，只需要注意我们能用到的那几个参数即可。完整的参数请查看官方refind.conf-sample文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rEFInd配置说明">
+<meta property="og:url" content="http://example.com/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/index.html">
 <meta property="og:site_name" content="Dell7567-OC">
-<meta property="og:description" content="相关网页及项目由VicQ创建并维护">
+<meta property="og:description" content="rEFInd配置说明（节选自远景论坛）提取了几个常用参数对refind.conf文件做一下说明：其中的参数稍微有点多，但是我们不必深究，只需要注意我们能用到的那几个参数即可。完整的参数请查看官方refind.conf-sample文件">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-18T12:42:58.000Z">
+<meta property="article:modified_time" content="2020-10-18T12:45:27.169Z">
 <meta property="article:author" content="VicQ">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2020/10/">
+<link rel="canonical" href="http://example.com/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">
 
 
 <script id="page-configurations">
@@ -39,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 <script src="/test/lib/fireworks.js"></script>
-  <title>归档 | Dell7567-OC</title>
+  <title>rEFInd配置说明 | Dell7567-OC</title>
   
 
 
@@ -198,110 +200,129 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/test/images/author.jpg">
+      <meta itemprop="name" content="VicQ">
+      <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dell7567-OC">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          rEFInd配置说明
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 20:42:58 / 修改时间：20:45:27" itemprop="dateCreated datePublished" datetime="2020-10-18T20:42:58+08:00">2020-10-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <h1 id="rEFInd配置说明（节选自远景论坛）"><a href="#rEFInd配置说明（节选自远景论坛）" class="headerlink" title="rEFInd配置说明（节选自远景论坛）"></a>rEFInd配置说明（节选自<a target="_blank" rel="noopener" href="http://bbs.pcbeta.com/viewthread-1835917-1-1.html">远景论坛</a>）</h1><p>提取了几个常用参数对refind.conf文件做一下说明：<br>其中的参数稍微有点多，但是我们不必深究，只需要注意我们能用到的那几个参数即可。<br>完整的参数请查看官方refind.conf-sample文件</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">timeout 60</span><br><span class="line">&#x2F;&#x2F; 这个是超时设置，启动后暂停多少秒然后进入系统</span><br><span class="line">        ​shutdown_after_timeout false</span><br><span class="line">&#x2F;&#x2F; 顾名思义，在超时之后关机，设置true&#x2F;false</span><br><span class="line">​</span><br><span class="line">use_nvram false</span><br><span class="line">&#x2F;&#x2F; 是否使用nvram保存你的refind设置，个人建议使用本地文件来保存NVRAM变量，官方也说了长期使用NVRAM保存会对其有损耗</span><br><span class="line">​</span><br><span class="line">hideui singleuser,arrows,hints,label</span><br><span class="line">&#x2F;&#x2F; 隐藏引导界面的一些选项依，常用参数有以下选项</span><br><span class="line">&#x2F;&#x2F; singleuser：针对macOS的单用户模式</span><br><span class="line">&#x2F;&#x2F; arrows：这个是当你引导香过多时，隐藏你的左右两侧箭头的图标（前提是你主题中制作了该图标）</span><br><span class="line">&#x2F;&#x2F; hints：隐藏引导界面底部对refind的简要说明和帮助</span><br><span class="line">&#x2F;&#x2F; label：隐藏引导项的菜单文字</span><br><span class="line">&#x2F;&#x2F; badges：隐藏设备类型的标签，比如你插入含引导项的U盘的话，该引导项右下角就会有一个USB标识</span><br><span class="line">&#x2F;&#x2F; all：全部隐藏</span><br><span class="line">​</span><br><span class="line">small_icon_size 96</span><br><span class="line">&#x2F;&#x2F; 这是比如关机、重启这类图标的尺寸</span><br><span class="line">​</span><br><span class="line">big_icon_size 256</span><br><span class="line">&#x2F;&#x2F; 这就是引导项的图标尺寸）</span><br><span class="line">&#x2F;* 关于图标尺寸，我建议设置为你制作好的主题图标原尺寸为宜，这样可以避免缩放失真，从而影响美观 *&#x2F;</span><br><span class="line">​</span><br><span class="line">resolution 2560 1440</span><br><span class="line">&#x2F;&#x2F; 分辨率设置，可以接受两个参数(X * Y)或者一个参数(X)</span><br><span class="line">&#x2F;* 这里详细说一下，默认不设置的话值为&quot;0 0&quot;，官方说此时会使用你系统分辨率默认值，通常是800x600。</span><br><span class="line">当你使用1个参数来设置的时候，比如&quot;0、1、2~10&quot;等等，通过我的测试发现它的值是一个模式值数值表示(mode0,mode1~mode10),</span><br><span class="line">有可能你的显示器并不支持你设置的分辨率(如&quot;3840 2160&quot;)，然后启动后它就会显示你当前支持的所有模式，每个模式对应一个分辨率，然后你自己选择最适合你显示器分辨率填入即可 *&#x2F;</span><br><span class="line">​</span><br><span class="line">use_graphics_for osx,windows,linux</span><br><span class="line">&#x2F;&#x2F; 是否以图形化方式启动指定系统，默认refind会像OpenCore那样使用文字模式来启动系统，建议这里像我这样设置都使用图形化方式启动</span><br><span class="line">​</span><br><span class="line">showtools shutdown,reboot</span><br><span class="line">&#x2F;&#x2F; 显示哪些工具在你的引导项的下面，我只设置显示关机和重启，你需要更多项的话，参照官方Sample.conf文件完整说明</span><br><span class="line">​</span><br><span class="line">#dont_scan_tools ESP2:&#x2F;EFI&#x2F;ubuntu&#x2F;mmx64.efi,gptsync_x64.efi</span><br><span class="line">#scan_driver_dirs EFI&#x2F;tools&#x2F;drivers,drivers</span><br><span class="line">#scanfor internal,external,optical,manual</span><br><span class="line">#also_scan_dirs boot,ESP2:EFI&#x2F;linux&#x2F;kernels</span><br><span class="line">#dont_scan_dirs ESP:&#x2F;EFI&#x2F;boot,EFI&#x2F;Dell,EFI&#x2F;memtest86</span><br><span class="line">#dont_scan_dirs +ESP:&#x2F;EFI&#x2F;ubuntu</span><br><span class="line">#dont_scan_files shim.efi,MokManager.efi</span><br><span class="line">&#x2F;&#x2F; 这几个一般不需要使用，除非你分区、启动项或efi驱动过多时可能需要</span><br><span class="line">​</span><br><span class="line">dont_scan_volumes &quot;Macintosh HD&quot;,&quot;Recovery&quot;,&quot;Preboot&quot;</span><br><span class="line">&#x2F;&#x2F; 使用分区卷名称来设置不扫描哪些卷，跟Clover的隐藏引导卷类似</span><br><span class="line">​</span><br><span class="line">dont_scan_dirs EFI_ESP:&#x2F;EFI&#x2F;APPLE,&#x2F;EFI&#x2F;CLOVER,&#x2F;EFI&#x2F;Microsoft&#x2F;Boot,&#x2F;EFI&#x2F;OC</span><br><span class="line">&#x2F;&#x2F; 这个是设置不让refind扫面哪些目录，一般情况下我们只要自定义好了引导项，建议其它有.efi文件的目录都给添加上</span><br><span class="line">​</span><br><span class="line">scan_all_linux_kernels false</span><br><span class="line">&#x2F;&#x2F; 如果你没有Linux类系统的话，请设置为false，这样可以加快启动速度</span><br><span class="line">​</span><br><span class="line">&#x2F;* 下面的是自定义启动项，这才是我们需要设置的 *&#x2F;</span><br><span class="line">menuentry &quot;OpenCore&quot; &#123;  &#x2F;&#x2F; 引导项名称</span><br><span class="line">icon &#x2F;EFI&#x2F;BOOT&#x2F;themes&#x2F;Regular&#x2F;icons&#x2F;2K&#x2F;os_opencore.png  &#x2F;&#x2F; 图标路径</span><br><span class="line">loader &#x2F;EFI&#x2F;BOOT&#x2F;BOOTx64-OC.efi  &#x2F;&#x2F; efi启动文件路径</span><br><span class="line">enable  &#x2F;&#x2F; 此处设置启用&#x2F;不启用(enable&#x2F;disabled)此引导项</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">menuentry &quot;Clover&quot; &#123;</span><br><span class="line">icon &#x2F;EFI&#x2F;BOOT&#x2F;themes&#x2F;Regular&#x2F;icons&#x2F;2K&#x2F;os_clover.png</span><br><span class="line">loader &#x2F;EFI&#x2F;CLOVER&#x2F;CLOVERX64.efi</span><br><span class="line">disabled</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">include themes&#x2F;Regular&#x2F;theme-2K-dark.conf</span><br><span class="line">&#x2F;&#x2F; 引入主题的配置文件</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-18T20:44:18+08:00"
-              content="2020-10-18">
-          10-18
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/test/images/wechatpay.png" alt="VicQ 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/test/images/alipay.png" alt="VicQ 支付宝">
+        <p>支付宝</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/test/2020/10/18/OC%E4%B8%AD%E5%8E%9F%E7%94%9F%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E7%BB%84%E5%90%88/" itemprop="url">
-            <span itemprop="name">OC中原生快捷键的组合</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-18T20:42:58+08:00"
-              content="2020-10-18">
-          10-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/test/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" itemprop="url">
-            <span itemprop="name">rEFInd配置说明</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-18T15:00:27+08:00"
-              content="2020-10-18">
-          10-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/test/2020/10/18/0/" itemprop="url">
-            <span itemprop="name">0</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-18T09:46:00+08:00"
-              content="2020-10-18">
-          10-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/test/2020/10/18/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>VicQ
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" title="rEFInd配置说明">http://example.com/2020/10/18/rEFInd配置说明/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/test/2020/10/18/0/" rel="prev" title="0">
+      <i class="fa fa-chevron-left"></i> 0
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/test/2020/10/18/OC%E4%B8%AD%E5%8E%9F%E7%94%9F%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E7%BB%84%E5%90%88/" rel="next" title="OC中原生快捷键的组合">
+      OC中原生快捷键的组合 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -380,6 +401,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E%EF%BC%88%E8%8A%82%E9%80%89%E8%87%AA%E8%BF%9C%E6%99%AF%E8%AE%BA%E5%9D%9B%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">rEFInd配置说明（节选自远景论坛）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
       <div class="site-overview-wrap sidebar-panel">

@@ -14,21 +14,22 @@
 
 
 <link rel="stylesheet" href="/test/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/test/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/test/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://example.com/2020/10/18/hello-world/index.html">
 <meta property="og:site_name" content="Dell7567-OC">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-18T01:46:00.000Z">
-<meta property="article:modified_time" content="2020-10-18T06:56:37.728Z">
+<meta property="article:modified_time" content="2020-10-18T12:45:37.231Z">
 <meta property="article:author" content="VicQ">
 <meta name="twitter:card" content="summary">
 
@@ -44,7 +45,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
+<script src="/test/lib/fireworks.js"></script>
   <title>Hello World | Dell7567-OC</title>
   
 
@@ -104,6 +105,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -123,16 +125,68 @@
     <a href="/test/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/test/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/test/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/test/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+        <li class="menu-item menu-item-mac常用软件">
+
+    <a href="/test/software/" rel="section"><i class="fab fa-apple fa-fw"></i>Mac常用软件</a>
+
+  </li>
+        <li class="menu-item menu-item-linux">
+
+    <a href="/test/linux/" rel="section"><i class="fab fa-linux fa-fw"></i>Linux</a>
+
+  </li>
+        <li class="menu-item menu-item-windows">
+
+    <a href="/test/windows/" rel="section"><i class="fab fa-windows fa-fw"></i>Windows</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -156,7 +210,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/test/images/avatar.gif">
+      <meta itemprop="image" content="/test/images/author.jpg">
       <meta itemprop="name" content="VicQ">
       <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
     </span>
@@ -177,7 +231,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-18 09:46:00 / 修改时间：14:56:37" itemprop="dateCreated datePublished" datetime="2020-10-18T09:46:00+08:00">2020-10-18</time>
+              <time title="创建时间：2020-10-18 09:46:00 / 修改时间：20:45:37" itemprop="dateCreated datePublished" datetime="2020-10-18T09:46:00+08:00">2020-10-18</time>
             </span>
 
           
@@ -192,6 +246,7 @@
 
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -216,6 +271,16 @@
     打赏
   </button>
   <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/test/images/wechatpay.png" alt="VicQ 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/test/images/alipay.png" alt="VicQ 支付宝">
+        <p>支付宝</p>
+      </div>
 
   </div>
 </div>
@@ -258,8 +323,8 @@
     <div class="post-nav">
       <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/test/2020/10/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" rel="next" title="第一篇文章">
-      第一篇文章 <i class="fa fa-chevron-right"></i>
+    <a href="/test/2020/10/18/0/" rel="next" title="0">
+      0 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -305,7 +370,33 @@
     <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside class="sidebar">
+ <aside class="sidebar">
+ 
+ <div id="weather-v2-plugin-simple"></div>
+ <script>
+ WIDGET = {
+   CONFIG: {
+     "modules": "01234",
+     "background": 1,
+     "tmpColor": "FFFFFF",
+     "tmpSize": 16,
+     "cityColor": "FFFFFF",
+     "citySize": 16,
+     "aqiSize": 16,
+     "weatherIconSize": 24,
+     "alertIconSize": 18,
+     "padding": "10px 10px 10px 10px",
+     "shadow": "1",
+     "language": "auto",
+     "borderRadius": 5,
+     "fixed": "false",
+     "vertical": "middle",
+     "horizontal": "center",
+     "key": "939MPc4Y5p"
+   }
+ }
+ </script>
+ 
     <div class="sidebar-inner">
 
       <ul class="sidebar-nav motion-element">
@@ -322,11 +413,10 @@
           <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
-      
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1487511998&auto=1&height=66"></iframe>
-
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VicQ"
+      src="/test/images/author.jpg">
   <p class="site-author-name" itemprop="name">VicQ</p>
   <div class="site-description" itemprop="description">相关网页及项目由VicQ创建并维护</div>
 </div>
@@ -343,13 +433,16 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/vicjl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vicjl" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/vicjl/Dell7567-OC" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vicjl&#x2F;Dell7567-OC" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
         <a href="mailto:drqian@live.com" title="E-Mail → mailto:drqian@live.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:drqian@live.com" title="QQ → mailto:drqian@live.com" rel="noopener" target="_blank"><i class="fa fa-QQ fa-fw"></i>QQ</a>
+        <a href="https://jq.qq.com/?_wv=1027&k=UHJ8LP4X" title="QQ群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;UHJ8LP4X" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ群</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://gitee.com/vicjl/Dell7567-OC" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;vicjl&#x2F;Dell7567-OC" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>Gitee</a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
@@ -403,6 +496,9 @@
 
   
   <script src="/test/lib/anime.min.js"></script>
+  <script src="/test/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/test/lib/velocity/velocity.min.js"></script>
   <script src="/test/lib/velocity/velocity.ui.min.js"></script>
 
@@ -418,7 +514,68 @@
 
 <script src="/test/js/bookmark.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
 
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="/test/lib/three/three.min.js"></script>
+    <script defer src="/test/lib/three/canvas_sphere.min.js"></script>
 
 
   
@@ -426,6 +583,8 @@
 
 
 
+  
+<script src="/test/js/local-search.js"></script>
 
 
 
@@ -435,17 +594,37 @@
 
 
 
+<script data-pjax>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/test/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
+
+
+    <div id="pjax">
   
 
   
 
+    </div>
 
-
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
  
 <script src="/test/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>

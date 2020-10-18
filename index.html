@@ -14,10 +14,11 @@
 
 
 <link rel="stylesheet" href="/test/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/test/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/test/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="相关网页及项目由VicQ创建并维护">
@@ -42,7 +43,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
+<script src="/test/lib/fireworks.js"></script>
   <title>Dell7567-OC</title>
   
 
@@ -102,6 +103,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -121,16 +123,68 @@
     <a href="/test/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/test/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/test/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/test/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+        <li class="menu-item menu-item-mac常用软件">
+
+    <a href="/test/software/" rel="section"><i class="fab fa-apple fa-fw"></i>Mac常用软件</a>
+
+  </li>
+        <li class="menu-item menu-item-linux">
+
+    <a href="/test/linux/" rel="section"><i class="fab fa-linux fa-fw"></i>Linux</a>
+
+  </li>
+        <li class="menu-item menu-item-windows">
+
+    <a href="/test/windows/" rel="section"><i class="fab fa-windows fa-fw"></i>Windows</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -150,10 +204,142 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/OC%E4%B8%AD%E5%8E%9F%E7%94%9F%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E7%BB%84%E5%90%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/test/images/author.jpg">
+      <meta itemprop="name" content="VicQ">
+      <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dell7567-OC">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/test/2020/10/18/OC%E4%B8%AD%E5%8E%9F%E7%94%9F%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E7%BB%84%E5%90%88/" class="post-title-link" itemprop="url">OC中原生快捷键的组合</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 20:44:18 / 修改时间：20:45:18" itemprop="dateCreated datePublished" datetime="2020-10-18T20:44:18+08:00">2020-10-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="OC中的原生开机快捷键组合"><a href="#OC中的原生开机快捷键组合" class="headerlink" title="OC中的原生开机快捷键组合"></a>OC中的原生开机快捷键组合</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/test/2020/10/18/OC%E4%B8%AD%E5%8E%9F%E7%94%9F%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E7%BB%84%E5%90%88/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/test/images/author.jpg">
+      <meta itemprop="name" content="VicQ">
+      <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dell7567-OC">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/test/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" class="post-title-link" itemprop="url">rEFInd配置说明</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 20:42:58 / 修改时间：20:45:27" itemprop="dateCreated datePublished" datetime="2020-10-18T20:42:58+08:00">2020-10-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="rEFInd配置说明（节选自远景论坛）"><a href="#rEFInd配置说明（节选自远景论坛）" class="headerlink" title="rEFInd配置说明（节选自远景论坛）"></a>rEFInd配置说明（节选自<a target="_blank" rel="noopener" href="http://bbs.pcbeta.com/viewthread-1835917-1-1.html">远景论坛</a>）</h1><p>提取了几个常用参数对refind.conf文件做一下说明：<br>其中的参数稍微有点多，但是我们不必深究，只需要注意我们能用到的那几个参数即可。<br>完整的参数请查看官方refind.conf-sample文件</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/test/2020/10/18/rEFInd%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/test/images/avatar.gif">
+      <meta itemprop="image" content="/test/images/author.jpg">
       <meta itemprop="name" content="VicQ">
       <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
     </span>
@@ -222,135 +408,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/Untitled/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/test/images/avatar.gif">
-      <meta itemprop="name" content="VicQ">
-      <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dell7567-OC">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/test/2020/10/18/Untitled/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-18 14:57:12 / 修改时间：14:59:31" itemprop="dateCreated datePublished" datetime="2020-10-18T14:57:12+08:00">2020-10-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>欢迎来到Hexo！这是您的第一篇文章。查看文档以获取更多信息。如果在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上问我。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/test/2020/10/18/Untitled/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/test/images/avatar.gif">
-      <meta itemprop="name" content="VicQ">
-      <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dell7567-OC">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/test/2020/10/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">第一篇文章</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-18 14:10:13 / 修改时间：14:10:18" itemprop="dateCreated datePublished" datetime="2020-10-18T14:10:13+08:00">2020-10-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>随便瞎子饿一点西安hi大会滴啊会无电话醋酸钙伏安法海外购h’ka’s’w’g’r’fa’uwfhaw几个</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/18/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/test/images/avatar.gif">
+      <meta itemprop="image" content="/test/images/author.jpg">
       <meta itemprop="name" content="VicQ">
       <meta itemprop="description" content="相关网页及项目由VicQ创建并维护">
     </span>
@@ -372,7 +433,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-18 09:46:00 / 修改时间：14:56:37" itemprop="dateCreated datePublished" datetime="2020-10-18T09:46:00+08:00">2020-10-18</time>
+              <time title="创建时间：2020-10-18 09:46:00 / 修改时间：20:45:37" itemprop="dateCreated datePublished" datetime="2020-10-18T09:46:00+08:00">2020-10-18</time>
             </span>
 
           
@@ -387,19 +448,14 @@
 
       
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/test/2020/10/18/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -453,7 +509,33 @@
     <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside class="sidebar">
+ <aside class="sidebar">
+ 
+ <div id="weather-v2-plugin-simple"></div>
+ <script>
+ WIDGET = {
+   CONFIG: {
+     "modules": "01234",
+     "background": 1,
+     "tmpColor": "FFFFFF",
+     "tmpSize": 16,
+     "cityColor": "FFFFFF",
+     "citySize": 16,
+     "aqiSize": 16,
+     "weatherIconSize": 24,
+     "alertIconSize": 18,
+     "padding": "10px 10px 10px 10px",
+     "shadow": "1",
+     "language": "auto",
+     "borderRadius": 5,
+     "fixed": "false",
+     "vertical": "middle",
+     "horizontal": "center",
+     "key": "939MPc4Y5p"
+   }
+ }
+ </script>
+ 
     <div class="sidebar-inner">
 
       <ul class="sidebar-nav motion-element">
@@ -469,11 +551,10 @@
       <div class="post-toc-wrap sidebar-panel">
       </div>
       <!--/noindex-->
-      
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1487511998&auto=1&height=66"></iframe>
-
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="VicQ"
+      src="/test/images/author.jpg">
   <p class="site-author-name" itemprop="name">VicQ</p>
   <div class="site-description" itemprop="description">相关网页及项目由VicQ创建并维护</div>
 </div>
@@ -490,13 +571,16 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/vicjl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vicjl" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/vicjl/Dell7567-OC" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vicjl&#x2F;Dell7567-OC" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
         <a href="mailto:drqian@live.com" title="E-Mail → mailto:drqian@live.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:drqian@live.com" title="QQ → mailto:drqian@live.com" rel="noopener" target="_blank"><i class="fa fa-QQ fa-fw"></i>QQ</a>
+        <a href="https://jq.qq.com/?_wv=1027&k=UHJ8LP4X" title="QQ群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;UHJ8LP4X" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ群</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://gitee.com/vicjl/Dell7567-OC" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;vicjl&#x2F;Dell7567-OC" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>Gitee</a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
@@ -550,6 +634,9 @@
 
   
   <script src="/test/lib/anime.min.js"></script>
+  <script src="/test/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/test/lib/velocity/velocity.min.js"></script>
   <script src="/test/lib/velocity/velocity.ui.min.js"></script>
 
@@ -565,7 +652,68 @@
 
 <script src="/test/js/bookmark.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
 
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="/test/lib/three/three.min.js"></script>
+    <script defer src="/test/lib/three/canvas_sphere.min.js"></script>
 
 
   
@@ -573,6 +721,8 @@
 
 
 
+  
+<script src="/test/js/local-search.js"></script>
 
 
 
@@ -582,17 +732,37 @@
 
 
 
+<script data-pjax>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/test/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
+
+
+    <div id="pjax">
   
 
   
 
+    </div>
 
-
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
  
 <script src="/test/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
